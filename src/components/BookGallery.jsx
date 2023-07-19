@@ -29,7 +29,7 @@ const BookGallery = () => {
 						<h3 className="main-title text-center my-4">Books Gallery</h3>
 					</div>
 					{bookList.map((b) => (
-						<div className="col-md-3 my-2 d-flex align-items-stretch">
+						<div key={b.id}className="col-md-3 my-2 d-flex align-items-stretch">
 							<div className="card">
 								<img className="card-img-top" src={b.image} alt="..." />
 								<div className="card-body">

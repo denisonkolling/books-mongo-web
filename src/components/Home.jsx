@@ -34,7 +34,7 @@ const Home = () => {
             </div>
 
             <div className="card-body">
-              <table class="table">
+              <table className="table">
                 <thead>
                   <tr>
                     <th scope="col">Id</th>
@@ -55,7 +55,7 @@ const Home = () => {
                       <td>{b.author}</td>
                       <td>{b.year}</td>
                       <td>
-                        <div class="d-flex">
+                        <div className="d-flex">
                         <Link to={'editBook/'+b.id} className="btn btn-sm btn-primary px-4 m-1">
                           Edit
                         </Link>
