@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import bookService from '../service/book.service';
-import BookCard from './BookCard';
+
 
 const BookGallery = () => {
+	
 	const [bookList, setBookList] = useState([]);
-
-	const [msg, setMsg] = useState('');
 
 	useEffect(() => {
 		init();
@@ -23,17 +22,17 @@ const BookGallery = () => {
 	};
 
 	return (
-		<section id="grid-area" class="container d-block  justify-content-center">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<h3 class="main-title text-center my-4">Books Gallery</h3>
+		<section id="grid-area" className="container d-block  justify-content-center">
+			<div className="container">
+				<div className="row">
+					<div className="col-12">
+						<h3 className="main-title text-center my-4">Books Gallery</h3>
 					</div>
 					{bookList.map((b) => (
-						<div class="col-md-3 my-2 d-flex align-items-stretch">
-							<div class="card">
-								<img class="card-img-top" src={b.image} alt="..." />
-								<div class="card-body">
+						<div className="col-md-3 my-2 d-flex align-items-stretch">
+							<div className="card">
+								<img className="card-img-top" src={b.image} alt="..." />
+								<div className="card-body">
 									<h6>{b.name}</h6>
 									<p>
 										{b.author} - {b.category} - {b.year}

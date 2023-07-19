@@ -17,7 +17,6 @@ const EditBook = () => {
   const navigate = useNavigate();
 
   const { id } = useParams();
-  console.log(id);
 
   const [msg, setMsg] = useState("");
 

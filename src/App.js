@@ -7,7 +7,6 @@ import BookGallery from './components/BookGallery';
 import Login from './components/Login'
 import BookCard from './components/BookCard'
 
-import './App.css';
 
 function App() {
   return (

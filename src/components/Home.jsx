@@ -47,7 +47,7 @@ const Home = () => {
                 </thead>
                 <tbody>
                   {bookList.map((b, num) => (
-                    <tr>
+                    <tr key={b.id}>
                       <td>{num + 1}</td>
                       <td>{b.name}</td>
                       <td>{b.price}</td>
